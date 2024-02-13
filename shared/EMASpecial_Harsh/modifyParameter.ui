@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="headerFrame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* QFrame -----------------------------------------------------------------
+
+https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qframe
+https://doc.qt.io/qt-5/qframe.html#-prop
+https://doc.qt.io/qt-5/qframe.html#details
+https://stackoverflow.com/questions/14581498/qt-stylesheet-for-hline-vline-color
+
+--------------------------------------------------------------------------- */
+/* (dot) .QFrame  fix #141, #126, #123 */
+.QFrame {
+  background-color: #4b5055
+;
+
+  border-radius: 0px;
+  border: 0px solid transparent;
+
+  /* No frame */
+  /* HLine */
+  /* HLine */
+}
+
+.QFrame[frameShape=&quot;0&quot;] {
+  border-radius: 4px;
+  border: 1px transparent #2d2d2d;
+}
+
+.QFrame[frameShape=&quot;4&quot;] {
+  max-height: 2px;
+  border: none;
+  background-color: #2d2d2d;
+}
+
+.QFrame[frameShape=&quot;5&quot;] {
+  max-width: 2px;
+  border: none;
+  background-color: #2d2d2d;
+}
+
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="1" alignment="Qt::AlignRight|Qt::AlignTop">
+        <widget class="QFrame" name="btnframe_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignTop">
+           <widget class="QPushButton" name="bt_min">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>35</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>35</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+  background-color: transparent;
+  border: 0px solid transparent;
+
+}
+QPushButton:hover {
+  background-color: #148CD2;    
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icon1/minus.svg</normaloff>:/icon1/minus.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>15</width>
+              <height>15</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight|Qt::AlignTop">
+           <widget class="QPushButton" name="bt_close">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>35</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>35</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+  background-color: transparent;
+  border: 0px solid transparent;
+
+}
+QPushButton:hover {
+  background-color: #148CD2;    
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icon1/x.svg</normaloff>:/icon1/x.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>15</width>
+              <height>15</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QFrame" name="frame_2">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QFrame" name="modifyGrip">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(80, 80, 80);
+  border-radius: 0
+px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="irGrip">
+         <property name="maximumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(25,25,25);
+  border-radius: 0px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="16" column="2">
+        <widget class="QLineEdit" name="leCandleInterval">
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="4">
+        <widget class="QComboBox" name="cbOrderSide">
+         <item>
+          <property name="text">
+           <string>Buy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Sell</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>CE_STRIKE</string>
+         </property>
+        </widget>
+       </item>
+       <item row="24" column="2">
+        <widget class="QLineEdit" name="leTargetAmount">
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QComboBox" name="cbCF">
+         <item>
+          <property name="text">
+           <string>CASH</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FUT</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="15" column="5">
+        <widget class="QCheckBox" name="cbLiveCashPrice">
+         <property name="text">
+          <string>Live Cash Price</string>
+         </property>
+        </widget>
+       </item>
+       <item row="24" column="1">
+        <widget class="QLabel" name="label_51">
+         <property name="text">
+          <string>Target_Amount</string>
+         </property>
+        </widget>
+       </item>
+       <item row="24" column="5">
+        <widget class="QPushButton" name="pbSetLTP">
+         <property name="text">
+          <string>Set LTP</string>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="2">
+        <widget class="QLineEdit" name="leSLAmount">
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="3">
+        <widget class="QLabel" name="lbATMCE">
+         <property name="text">
+          <string>0.0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="2">
+        <widget class="QLineEdit" name="leQty">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>100</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="6">
+        <widget class="QLabel" name="lbATMPE">
+         <property name="text">
+          <string>0.0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="4">
+        <widget class="QCheckBox" name="checkBox">
+         <property name="text">
+          <string>isTrailing</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>CE</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="4">
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>PE_STRIKE</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>FolioName:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="1">
+        <widget class="QLabel" name="label_48">
+         <property name="text">
+          <string>Candle Interval</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="8">
+        <widget class="Line" name="line_10">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="28" column="4">
+        <widget class="QPushButton" name="pbCancel">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>CANCEL</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="2">
+        <widget class="QLineEdit" name="leSLPoint">
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="1">
+        <widget class="QLabel" name="label_36">
+         <property name="text">
+          <string>SL_Amount</string>
+         </property>
+        </widget>
+       </item>
+       <item row="28" column="3">
+        <widget class="QPushButton" name="pbApply">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>APPLY</string>
+         </property>
+         <property name="shortcut">
+          <string>Return</string>
+         </property>
+        </widget>
+       </item>
+       <item row="30" column="7">
+        <widget class="QLabel" name="lbTrend">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_53">
+         <property name="text">
+          <string>CllientID</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="cbSymbol"/>
+       </item>
+       <item row="24" column="4">
+        <widget class="QLineEdit" name="leLTP">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="lb_atm">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QPushButton" name="pbGet">
+         <property name="text">
+          <string>Get</string>
+         </property>
+        </widget>
+       </item>
+       <item row="27" column="5" colspan="3">
+        <widget class="QLabel" name="leMTM">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="5">
+        <widget class="QLabel" name="labelEma">
+         <property name="text">
+          <string>0.0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>EMA Adj Pts</string>
+         </property>
+        </widget>
+       </item>
+       <item row="27" column="4">
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>MTM</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="2">
+        <widget class="QLineEdit" name="leEmaAdjPts">
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QComboBox" name="cbClient"/>
+       </item>
+       <item row="17" column="4">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>EMA </string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="6">
+        <widget class="QPushButton" name="pbAdjApply">
+         <property name="text">
+          <string>Apply</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="6">
+        <widget class="QPushButton" name="pbGetEma">
+         <property name="text">
+          <string>Get EMA</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="1">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Sl Pts</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5" colspan="2">
+        <widget class="QLabel" name="lbEMa">
+         <property name="text">
+          <string>0.00</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>EMA point</string>
+         </property>
+        </widget>
+       </item>
+       <item row="25" column="1">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>PriceAdj</string>
+         </property>
+        </widget>
+       </item>
+       <item row="25" column="2">
+        <widget class="QLineEdit" name="lePriceAdj">
+         <property name="text">
+          <string>15</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="4">
+        <widget class="QLabel" name="label_46">
+         <property name="text">
+          <string>length</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QComboBox" name="cbExp">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLabel" name="lb_CEP">
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1" colspan="7">
+        <widget class="Line" name="line_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="4">
+        <widget class="QLabel" name="lb_PEP">
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QLabel" name="lb_ltp">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>0.0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="29" column="1" rowspan="2" colspan="7">
+        <widget class="QTableView" name="tableViewLogs"/>
+       </item>
+       <item row="16" column="5">
+        <widget class="QLineEdit" name="leCandleLength">
+         <property name="text">
+          <string>100</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="1" colspan="7">
+        <widget class="Line" name="line_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="26" column="1" colspan="7">
+        <widget class="Line" name="line_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="4">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>PE</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="leFolioName">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="5">
+        <widget class="QLineEdit" name="leAdjPts">
+         <property name="text">
+          <string>+0.00</string>
+         </property>
+         <property name="placeholderText">
+          <string>+25</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="1">
+        <widget class="QLabel" name="label_34">
+         <property name="text">
+          <string>QTY</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_32">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;ATM&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="7">
+        <widget class="Line" name="line_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLineEdit" name="leCashPrice">
+         <property name="text">
+          <string>0.00</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>CashPrice</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QPushButton" name="pbpriceapply">
+         <property name="text">
+          <string>Apply</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="2">
+        <widget class="QComboBox" name="cbStrike_CE">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="currentText">
+          <string>ATM -15</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>ATM -15</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -14</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -13</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -12</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -11</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -10</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -9</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM -1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +9</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +10</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +11</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +12</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +13</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +14</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +15</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="12" column="5">
+        <widget class="QComboBox" name="cbStrike_PE">
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="currentText">
+          <string>ATM +15</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>ATM +15</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +14</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +13</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +12</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +11</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +10</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +9</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM +1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -8</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -9</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -10</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -11</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -12</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -13</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -14</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ATM  -15</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="7" column="5">
+        <widget class="QLabel" name="label_42">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PAIR_TOTAL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="5">
+        <widget class="QLabel" name="lb_pTotal">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+      <zorder>cbSymbol</zorder>
+      <zorder>label_51</zorder>
+      <zorder>label_36</zorder>
+      <zorder>leLTP</zorder>
+      <zorder>pbSetLTP</zorder>
+      <zorder>leTargetAmount</zorder>
+      <zorder>checkBox</zorder>
+      <zorder>leSLAmount</zorder>
+      <zorder>label_53</zorder>
+      <zorder>label_30</zorder>
+      <zorder>lb_ltp</zorder>
+      <zorder>cbCF</zorder>
+      <zorder>pbGet</zorder>
+      <zorder>leAdjPts</zorder>
+      <zorder>cbClient</zorder>
+      <zorder>cbExp</zorder>
+      <zorder>leFolioName</zorder>
+      <zorder>lb_atm</zorder>
+      <zorder>label_48</zorder>
+      <zorder>line_10</zorder>
+      <zorder>lb_PEP</zorder>
+      <zorder>label_32</zorder>
+      <zorder>label_12</zorder>
+      <zorder>pbCancel</zorder>
+      <zorder>leQty</zorder>
+      <zorder>label_17</zorder>
+      <zorder>lb_CEP</zorder>
+      <zorder>line_6</zorder>
+      <zorder>lbTrend</zorder>
+      <zorder>leSLPoint</zorder>
+      <zorder>label_10</zorder>
+      <zorder>label_13</zorder>
+      <zorder>label_34</zorder>
+      <zorder>label_4</zorder>
+      <zorder>line_8</zorder>
+      <zorder>line_7</zorder>
+      <zorder>label_46</zorder>
+      <zorder>line_9</zorder>
+      <zorder>leCandleInterval</zorder>
+      <zorder>leCandleLength</zorder>
+      <zorder>lbATMCE</zorder>
+      <zorder>cbLiveCashPrice</zorder>
+      <zorder>labelEma</zorder>
+      <zorder>label_3</zorder>
+      <zorder>leEmaAdjPts</zorder>
+      <zorder>label</zorder>
+      <zorder>cbOrderSide</zorder>
+      <zorder>label_5</zorder>
+      <zorder>leMTM</zorder>
+      <zorder>pbGetEma</zorder>
+      <zorder>lbATMPE</zorder>
+      <zorder>pbAdjApply</zorder>
+      <zorder>tableViewLogs</zorder>
+      <zorder>pbApply</zorder>
+      <zorder>lePriceAdj</zorder>
+      <zorder>label_15</zorder>
+      <zorder>label_2</zorder>
+      <zorder>lbEMa</zorder>
+      <zorder>leCashPrice</zorder>
+      <zorder>label_6</zorder>
+      <zorder>pbpriceapply</zorder>
+      <zorder>cbStrike_CE</zorder>
+      <zorder>cbStrike_PE</zorder>
+      <zorder>label_42</zorder>
+      <zorder>lb_pTotal</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,154 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'form.ui'
+##
+## Created by: Qt User Interface Compiler version 5.15.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
+
+import icons_rc
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(332, 344)
+        MainWindow.setMaximumSize(QSize(800, 600))
+        MainWindow.setLayoutDirection(Qt.LeftToRight)
+        MainWindow.setAutoFillBackground(False)
+        self.actionNew = QAction(MainWindow)
+        self.actionNew.setObjectName(u"actionNew")
+        self.actionCopy = QAction(MainWindow)
+        self.actionCopy.setObjectName(u"actionCopy")
+        self.actionPaste = QAction(MainWindow)
+        self.actionPaste.setObjectName(u"actionPaste")
+        self.actionSave = QAction(MainWindow)
+        self.actionSave.setObjectName(u"actionSave")
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.pushButton = QPushButton(self.centralwidget)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(20, 270, 281, 21))
+        self.radioButton = QRadioButton(self.centralwidget)
+        self.radioButton.setObjectName(u"radioButton")
+        self.radioButton.setGeometry(QRect(60, 240, 89, 20))
+        self.radioButton_2 = QRadioButton(self.centralwidget)
+        self.radioButton_2.setObjectName(u"radioButton_2")
+        self.radioButton_2.setGeometry(QRect(200, 240, 89, 20))
+        self.lineEdit = QLineEdit(self.centralwidget)
+        self.lineEdit.setObjectName(u"lineEdit")
+        self.lineEdit.setGeometry(QRect(120, 140, 113, 22))
+        self.lineEdit_2 = QLineEdit(self.centralwidget)
+        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.lineEdit_2.setGeometry(QRect(120, 80, 113, 22))
+        self.label = QLabel(self.centralwidget)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(40, 80, 49, 16))
+        self.label_2 = QLabel(self.centralwidget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(40, 140, 49, 16))
+        self.label_3 = QLabel(self.centralwidget)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(60, 180, 61, 51))
+        self.label_3.setPixmap(QPixmap(u":/icons/pycharmlogo.png"))
+        self.label_3.setScaledContents(True)
+        self.label_4 = QLabel(self.centralwidget)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(200, 170, 71, 61))
+        self.label_4.setAutoFillBackground(False)
+        self.label_4.setPixmap(QPixmap(u":/icons/qtcreator.png"))
+        self.label_4.setScaledContents(True)
+        self.label_4.setMargin(0)
+        self.label_4.setOpenExternalLinks(False)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.pushButton.raise_()
+        self.radioButton.raise_()
+        self.radioButton_2.raise_()
+        self.lineEdit.raise_()
+        self.lineEdit_2.raise_()
+        self.label.raise_()
+        self.label_2.raise_()
+        self.label_4.raise_()
+        self.label_3.raise_()
+        self.menubar = QMenuBar(MainWindow)
+        self.menubar.setObjectName(u"menubar")
+        self.menubar.setGeometry(QRect(0, 0, 332, 21))
+        self.menuform = QMenu(self.menubar)
+        self.menuform.setObjectName(u"menuform")
+        self.menuEdit = QMenu(self.menubar)
+        self.menuEdit.setObjectName(u"menuEdit")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.menubar.addAction(self.menuform.menuAction())
+        self.menubar.addAction(self.menuEdit.menuAction())
+        self.menuform.addAction(self.actionNew)
+        self.menuform.addAction(self.actionSave)
+        self.menuEdit.addAction(self.actionCopy)
+        self.menuEdit.addAction(self.actionPaste)
+
+        self.retranslateUi(MainWindow)
+
+        QMetaObject.connectSlotsByName(MainWindow)
+
+        self.actionNew.triggered.connect(lambda :self.clicked("New was clicked"))
+        self.actionNew.triggered.connect(lambda: self.clicked("Save was clicked"))
+        self.actionNew.triggered.connect(lambda: self.clicked("Copy was clicked"))
+        self.actionNew.triggered.connect(lambda: self.clicked("Paste was clicked"))
+
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.actionNew.setText(QCoreApplication.translate("MainWindow", u"New", None))
+        # if QT_CONFIG(statustip)
+        self.actionNew.setStatusTip(QCoreApplication.translate("MainWindow", u"Create new file", None))
+        # endif // QT_CONFIG(statustip)
+        # if QT_CONFIG(shortcut)
+        self.actionNew.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+N", None))
+        # endif // QT_CONFIG(shortcut)
+        self.actionCopy.setText(QCoreApplication.translate("MainWindow", u"Copy", None))
+        # if QT_CONFIG(statustip)
+        self.actionCopy.setStatusTip(QCoreApplication.translate("MainWindow", u"Copy selected file", None))
+        # endif // QT_CONFIG(statustip)
+        # if QT_CONFIG(shortcut)
+        self.actionCopy.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+C", None))
+        # endif // QT_CONFIG(shortcut)
+        self.actionPaste.setText(QCoreApplication.translate("MainWindow", u"Paste", None))
+        # if QT_CONFIG(statustip)
+        self.actionPaste.setStatusTip(QCoreApplication.translate("MainWindow", u"Paste copied file", None))
+        # endif // QT_CONFIG(statustip)
+        # if QT_CONFIG(shortcut)
+        self.actionPaste.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+V", None))
+        # endif // QT_CONFIG(shortcut)
+        self.actionSave.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        # if QT_CONFIG(statustip)
+        self.actionSave.setStatusTip(QCoreApplication.translate("MainWindow", u"Save a file", None))
+        # endif // QT_CONFIG(statustip)
+        # if QT_CONFIG(shortcut)
+        self.actionSave.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+S", None))
+        # endif // QT_CONFIG(shortcut)
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.radioButton.setText(QCoreApplication.translate("MainWindow", u"RadioButton", None))
+        self.radioButton_2.setText(QCoreApplication.translate("MainWindow", u"RadioButton", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.label_3.setText("")
+        self.label_4.setText("")
+        self.menuform.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
+        self.menuEdit.setTitle(QCoreApplication.translate("MainWindow", u"Edit", None))
+    # retranslateUi
+
+
+def clicked(self, text):
+    self.label.setText(text)
+    self.label.adjustSize()
